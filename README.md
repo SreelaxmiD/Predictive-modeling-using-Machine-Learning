@@ -1,14 +1,12 @@
 # Predictive-modeling-using-Machine-Learning
 📖 Project Description  This project focuses on building predictive models using machine learning algorithms. The dataset is preprocessed, split into training and testing sets, and used to train multiple models. The performance of each model is evaluated using standard metrics and visualized through charts and confusion matrices.  
-
 The goal is to gain practical experience in:
-
 Data preprocessing
 Feature engineering
 Model training
 Model evaluation
 Performance visualization
-🚀 Features
+## 🚀 Features
 
 ✅ Data Cleaning and Preprocessing
 
@@ -30,7 +28,7 @@ Performance visualization
 
 ✅ Feature Importance Analysis
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 Python
 Pandas
 NumPy
@@ -38,7 +36,8 @@ Matplotlib
 Seaborn
 Scikit-learn
 Jupyter Notebook
-📂 Project Structure
+
+## 📂 Project Structure
 Predictive-Modeling-ML/
 │
 ├── dataset/
@@ -60,7 +59,7 @@ Predictive-Modeling-ML/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
-📊 Workflow
+## 📊 Workflow
 Step 1: Load Dataset
 import pandas as pd
 
@@ -90,13 +89,13 @@ model = RandomForestClassifier(
 model.fit(X_train, y_train)
 Step 5: Prediction
 y_pred = model.predict(X_test)
-📈 Model Evaluation
+## 📈 Model Evaluation
 from sklearn.metrics import accuracy_score
 
 accuracy = accuracy_score(y_test, y_pred)
 
 print("Accuracy:", accuracy)
-Confusion Matrix
+## Confusion Matrix
 from sklearn.metrics import confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -106,7 +105,7 @@ cm = confusion_matrix(y_test, y_pred)
 sns.heatmap(cm, annot=True, fmt='d')
 plt.title("Confusion Matrix")
 plt.show()
-ROC Curve
+## ROC Curve
 from sklearn.metrics import roc_curve, auc
 
 y_prob = model.predict_proba(X_test)[:,1]
@@ -121,7 +120,7 @@ plt.xlabel("False Positive Rate")
 plt.ylabel("True Positive Rate")
 plt.legend()
 plt.show()
-Sample Performance Results
+## Sample Performance Results
 Model accuracy comparison
 
 Example accuracy scores for different machine learning models.
@@ -134,7 +133,7 @@ Example accuracy scores for different machine learning models.
 Linear Regression
 Decision Tree
 Random Forest
-📋 Requirements
+## 📋 Requirements
 
 Create a requirements.txt file:
 
