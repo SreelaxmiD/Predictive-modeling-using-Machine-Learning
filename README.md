@@ -65,11 +65,13 @@ import pandas as pd
 
 data = pd.read_csv("data.csv")
 print(data.head())
+
 Step 2: Data Preprocessing
 data = data.dropna()
 
 X = data.drop("target", axis=1)
 y = data["target"]
+
 Step 3: Train-Test Split
 from sklearn.model_selection import train_test_split
 
